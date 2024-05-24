@@ -1,6 +1,5 @@
 /**
 * @name Cyberpunk: Edgerunners
-* @author Lukawtf
 * @description An easily customizable theme based on the anime Cyberpunk: Edgerunners.
 */
 
@@ -10,9 +9,9 @@
   --theme-background-image: url(https://i.imgur.com/hQaAVgA.jpeg);
   --main-theme-color: #5bc1da;
   --theme-transparency: rgba(0, 0, 0, 0.75);
-  --home-icon-image: url(https://i.imgur.com/q89AHGe.png);
+  --home-icon-image: url(https://i.imgur.com/zf8c7cS.jpeg);
   --home-icon-image-position: center center;
-  --home-icon-image-zoom: 90%;
+  --home-icon-image-zoom: 100%;
   --server-listing-width: 62px;
   --font-size: 100%;
   --mention-color: rgba(250, 166, 26, 0.05);
@@ -182,7 +181,53 @@ div[class*="bannerVisible"] {
   visibility: hidden !important;
 }
 
+/* Direct Messages Section */
+.privateChannels-1nO12o {
+  background-image: var(--theme-background-image) !important;
+  background-size: cover !important;
+  background-position: center !important;
+}
+
+.privateChannelsHeaderContainer-1UWASm {
+  background-color: var(--channel-header-background-color) !important;
+  color: var(--channel-header-text-color) !important;
+}
+
+.dmChannel-2oKrZs {
+  background-image: var(--theme-background-image) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
 
 .sidebar_e031be {
   background: transparent !important;
+}
+
+.container_b92032 {
+  background: transparent !important;
+}
+
+.container_de2a56 {
+  background: transparent !important;
+}
+
+.mainCard__0ec2c {
+  background: transparent !important;
+}
+
+div[aria-label="Direct Messages"] {
+  background-image: none !important; /* Remove any custom background image */
+  background-color: inherit !important; /* Reset the background color to default */
+  color: inherit !important; /* Ensure the color is default */
+}
+
+div[aria-label="Direct Messages"] svg {
+  fill: currentColor !important; /* Reset SVG fill color to default */
+}
+
+/* If specific classes are used, reset them */
+.wrapper__8436d[role="treeitem"][data-list-item-id="guildsnav___home"] {
+  background-image: none !important;
+  background-color: inherit !important;
 }
